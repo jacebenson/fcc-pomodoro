@@ -1,4 +1,4 @@
-# Quotes
+# Pomodoro Clock
 
 This frontend project is to use the skills learned at FreeCodeCamp.
 
