@@ -23,6 +23,15 @@ $(function () {
             timers.pomodoro.pause();
         }
     });
+    $('#start').on({ 'touchstart' : function(){
+            if (typeof timers.pomodoro !== 'undefined') {
+            timers.pomodoro.start();
+        } else {
+            var workTime = parseFloat($("#pomodoro-preset-timer").val());
+            var breakTime = parseFloat($("#break-preset-timer").val());
+            workit(workTime,breakTime);
+        }
+    } });
     $("#start").on("click", function () {
         if (typeof timers.pomodoro !== 'undefined') {
             timers.pomodoro.start();
